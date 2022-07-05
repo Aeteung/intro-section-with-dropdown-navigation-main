@@ -84,7 +84,7 @@ Users should be able to:
 - Cross-brower adaptiveness
 - Loading Speed enhancement
 - Weird scrollbar in Chrome
-![](./screenshot.png)
+![](./screenshot2.png)
 
 ### Useful resources
 
