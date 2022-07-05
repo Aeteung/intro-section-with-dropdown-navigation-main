@@ -49,51 +49,56 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+- Using &nbsp; instead of " " to fill in the content in order to prevent the content block shrinks down.
 ```html
 <a href="#our_team" class="dropdown-link">Our&nbsp;Team</a>
 ```
+
+- Set the viewbox and height/width to align icons in the dropdown.
+```html
+<svg class="dropdown-icon" preserveAspectRatio="none" viewbox="-1 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14 3v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h1V1a1 1 0 1 1 2 0v1h2V1a1 1 0 1 1 2 0v1h2V1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 1 1Zm-2 3H2v1h10V6Zm0 3H2v1h10V9Zm0 3H2v1h10v-1Z" fill="#726CEE"/></svg>
+```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.dropdown-icon {
+    height: 1em;
+    width: 1em;
+    margin-right: 1em;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- Using the clamp function to give an upper and lower limit for a size
+```scss
+& > div {
+    margin: 2rem clamp(2rem, 7vw, 6rem) 2rem clamp(2rem, 5vw, 4.5rem);
+    grid-template-rows: 7fr 4fr 3fr 4fr;
+    & > * {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- SEO enhancement
+- Cross-brower adaptiveness
+- Loading Speed enhancement
+- Weird scrollbar in Chrome
+![](./screenshot.png)
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Responsive Web Design - freeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-intermediate-css-by-building-a-picasso-painting) - This is an amazing free course which helped me get used to html tags and css attribute. I'd recommend it to anyone who wants to start to learn Frontend basic.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Conquering Responsive Layouts Course](https://courses.kevinpowell.co/conquering-responsive-layouts) - This helped me so much for me to start my journey on frontend. I learned navigation bar, css flexbox and some basic designing principles via this free course.
+
+- [Learn JavaScript by Building 7 Games](https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=freeCodeCamp.org) - When I started building these games, I had 0 knowledge about what frontend JavaScript looks like and how they worked. I still found it useful and easy to follow. I learned some concepts like eventListener, DOM and etc.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@Aeteung](https://www.frontendmentor.io/profile/Aeteung)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Special thanks to Kevin Powell(https://www.youtube.com/kepowob/videos). His content always informative and inspirational.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
