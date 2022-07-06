@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Aeteung/intro-section-with-dropdown-navigation-main)
-- Live Site URL: [Add live site URL here](https://github.com/Aeteung/intro-section-with-dropdown-navigation-main)
+- Solution URL: [Github Repo](https://github.com/Aeteung/intro-section-with-dropdown-navigation-main)
+- Live Site URL: [Github Pages](https://aeteung.github.io/intro-section-with-dropdown-navigation-main/)
 
 ## My process
 
