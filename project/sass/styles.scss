@@ -169,16 +169,16 @@ img {
     padding: 0;
     border-radius: 50%;
     background: $--color-100;
+}
 
-    &>span#nav-bar_close-button {
+.close_button {
+    @include hamburger();
+    transform: rotate(45deg);
+    &::after {
+        content: '';
         @include hamburger();
-        transform: rotate(45deg);
-        &::after {
-            content: '';
-            @include hamburger();
-            transform: rotate(90deg);
-            transform-origin: center;
-        }
+        transform: rotate(90deg);
+        transform-origin: center;
     }
 }
 

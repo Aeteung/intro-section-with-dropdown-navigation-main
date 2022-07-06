@@ -127,14 +127,15 @@ img {
   border-radius: 50%;
   background: hsl(0deg, 0%, 98%);
 }
-.nav-bar_close-button > span#nav-bar_close-button {
+
+.close_button {
   width: 100%;
   display: block;
   height: 2px;
   background-color: hsl(0deg, 0%, 8%);
   transform: rotate(45deg);
 }
-.nav-bar_close-button > span#nav-bar_close-button::after {
+.close_button::after {
   content: "";
   width: 100%;
   display: block;
