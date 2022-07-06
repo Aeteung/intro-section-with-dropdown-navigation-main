@@ -163,6 +163,7 @@ img {
   align-self: center;
 }
 .nav-item_register {
+  cursor: pointer;
   transform-origin: center;
   padding: 1rem 0;
   width: 100%;
@@ -252,6 +253,7 @@ img {
 }
 
 .learn-more {
+  cursor: pointer;
   display: block;
   color: hsl(0deg, 0%, 98%);
   background-color: hsl(0deg, 0%, 8%);
