@@ -182,6 +182,7 @@ img {
   border-radius: 1rem;
   border: 2px solid hsl(0deg, 0%, 41%);
   background-color: hsl(0deg, 0%, 98%);
+  transition: color 0.15s, border-color 0.15s linear;
 }
 .nav-link_register:hover, .nav-link_register:focus .nav-link_register::after {
   color: #000;
@@ -211,6 +212,7 @@ img {
 
 .nav-link, .dropdown-link {
   color: hsl(0deg, 0%, 41%);
+  transition: color 0.15s linear;
 }
 
 .nav-link:hover, .dropdown-link:hover {
@@ -266,9 +268,10 @@ img {
   background-color: hsl(0deg, 0%, 8%);
   width: fit-content;
   padding: 1rem 1.5rem;
-  border: 1px solid hsl(0deg, 0%, 8%);
+  border: 2px solid hsl(0deg, 0%, 8%);
   border-radius: 1rem;
   margin: 1rem auto 2rem;
+  transition: color 0.15s, background-color 0.15s linear;
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
   font-size: 16px;

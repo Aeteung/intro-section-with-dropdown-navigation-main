@@ -221,6 +221,9 @@ img {
     border-radius: 1rem;
     border: 2px solid $--color-400;
     background-color: $--color-100;
+    transition: color 0.15s, border-color 0.15s linear;
+
+
     &:hover, &:focus &::after{
         color: #000;
         border-color: #000;
@@ -252,6 +255,7 @@ img {
 
 .nav-link, .dropdown-link{
     color: $--color-400;
+    transition: color 0.15s linear;
 }
 
 .nav-link:hover, .dropdown-link:hover{
@@ -303,9 +307,10 @@ img {
     background-color: $--color-900;
     width: fit-content;
     padding: 1rem 1.5rem;
-    border: 1px solid $--color-900;
+    border: 2px solid $--color-900;
     border-radius: 1rem;
     margin: 1rem auto 2rem;
+    transition: color 0.15s, background-color 0.15s linear;
     @include content-font();
 
     &:hover, &:focus {
