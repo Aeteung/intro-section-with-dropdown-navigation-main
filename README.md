@@ -80,6 +80,7 @@ Users should be able to:
 
 ### Continued development
 
+- Nav hover in mobile devices since my nav ain't performing well in mobile devices
 - SEO enhancement
 - Cross-brower adaptiveness
 - Loading Speed enhancement
