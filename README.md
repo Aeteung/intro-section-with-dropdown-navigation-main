@@ -101,4 +101,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-Special thanks to [Kevin Powell](https://www.youtube.com/kepowob/videos). His content always informative and inspirational.
+Special thanks to [Kevin Powell](https://www.youtube.com/kepowob/videos). His content is always informative and inspirational.
