@@ -1,7 +1,7 @@
-const body = document.getElementsByTagName('body');
-const header = document.getElementsByTagName('header');
+const body = document.body;
+// const body = document.getElementsByTagName('body');
+const header = document.querySelector('header');
 const dbs = document.querySelectorAll('.dropdown-button');
-const dbds = document.querySelectorAll('.dropdown-button_desjtio');
 const navbarDisplay = document.getElementById('navbar');
 const navbarButton = document.querySelector('.nav-toggle');
 const navbarCloseButton = document.querySelector('.nav-bar_close-button');
@@ -42,34 +42,16 @@ for (let db of dbs) {
     
 }
 
-for (let dbd of dbds) {
-    dbd.addEventListener('click', () => {    
-        for (let svg of db.children) {
-            svg.classList.toggle('none');
-        }
-        
-        let dm = db.nextElementSibling;
-        dm.classList.toggle('dropdown-menu_close');
-        
-        
-        for(let dmli of dm.children){
-            dmli.classList.toggle('dropdown-item_open');
-        }
-    })
-    
-}
-
 navbarButton.addEventListener('click', ()=>{
-    body[0].insertBefore(cover, header[0]);
+    body.insertBefore(cover, header);
     cover.style.zIndex = "99";
     cover.style.opacity = "0.65";
-    body[0].style.overflow = "hidden"; 
+    body.style.overflow = "hidden"; 
     navbarDisplay.style.transform = "translateX(0)";
 })
 
 function removeCover(){
     cover.style.opacity = "0";
     cover.style.zIndex = "-1";
-    body[0].style.overflowY = "scroll"; 
-
+    body.style.overflowY = "scroll";
 }
