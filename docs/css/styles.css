@@ -114,6 +114,7 @@ img {
   transform: translateX(100%);
   background-color: hsl(0deg, 0%, 98%);
   z-index: 999;
+  overflow-y: scroll;
   transition: all ease-out 0.15s;
 }
 
@@ -133,6 +134,7 @@ img {
   display: block;
   height: 2px;
   background-color: hsl(0deg, 0%, 8%);
+  margin: calc((2rem - 2px) / 2) 0;
   transform: rotate(45deg);
 }
 .close_button::after {

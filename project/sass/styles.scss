@@ -155,9 +155,9 @@ img {
     transform: translateX(100%);
     background-color: $--color-100;
     z-index: 999;
+    overflow-y: scroll;
 
     transition: all ease-out .15s;
-
 }
 
 .nav-bar_close-button {
@@ -173,6 +173,7 @@ img {
 
 .close_button {
     @include hamburger();
+    margin: calc((2rem - 2px) / 2) 0;
     transform: rotate(45deg);
     &::after {
         content: '';

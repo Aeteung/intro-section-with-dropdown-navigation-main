@@ -63,13 +63,13 @@ navbarButton.addEventListener('click', ()=>{
     body[0].insertBefore(cover, header[0]);
     cover.style.zIndex = "99";
     cover.style.opacity = "0.65";
-    // body[0].style.overflowY = "hidden"; 
+    body[0].style.overflow = "hidden"; 
     navbarDisplay.style.transform = "translateX(0)";
 })
 
 function removeCover(){
     cover.style.opacity = "0";
     cover.style.zIndex = "-1";
-    // body[0].style.overflowY = "auto"; 
+    body[0].style.overflowY = "scroll"; 
 
 }
